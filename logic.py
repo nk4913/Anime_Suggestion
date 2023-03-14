@@ -16,10 +16,23 @@ def search_anime(name):
     response = requests.request("GET", url, headers=headers, params=querystring)
 
     data = response.json()
-    title = data['data'][1]['title'] 
-    gener = data['data'][1]['genres'] 
-    image =  data['data'][1]['image']
-    return  title , gener , image
 
-data = search_anime("one piece ")
-print(data[0])
+    title = []
+    gener = []
+    image = []
+    for x in data.values():
+        for y in x:
+            try :
+                # print(y)
+                title.append(y["title"])
+                gener.append(y["genres"])
+                image.append(y["image"])
+                
+            except Exception as e:
+                pass
+
+    return title , gener , image
+    
+
+
+

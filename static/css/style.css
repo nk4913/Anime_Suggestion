@@ -1,0 +1,43 @@
+body{
+    background-color: black;
+}
+
+.my-5 {
+    margin-top: 0rem!important;
+    margin-bottom: 3rem!important;
+    margin-left: 25rem;
+}
+.mx-3 {
+    margin-right: -2rem!important;
+    margin-left: 11rem!important;
+}
+
+.mx-1 {
+    margin-right: 0.25rem!important;
+    margin-left: -7.75rem!important;
+}
+.start-50 {
+    top: 30%;
+    left: 42%!important;
+}
+
+.top-50 {
+    top: 37%!important;
+}
+
+.px-5 {
+    border-radius: 0.6rem ;
+    padding-right: 7.5rem!important;
+    padding-left: 3rem!important;
+}
+
+.grt {
+    font-size: 40px;
+    font-family: Arial, 
+        Helvetica, sans-serif;
+    background: linear-gradient(
+        to right, #f32170, #ff6b08,
+         #cf23cf, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
