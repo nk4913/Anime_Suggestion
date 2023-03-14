@@ -52,10 +52,12 @@
 
       <!-- <h1>{{titles}}</h1> -->
     {% for title in titles %}
+    <h1 style="color:aliceblue">{{title}}</h1>
         {% for gener in geners %}
+        <h1 style="color:aliceblue">{{gener}}</h1>
             {% for image in images %}
-            <h1 style="color:aliceblue">{{title}}</h1>
-            <h1 style="color:aliceblue">{{gener}}</h1>
+            
+            
             <img src="{{image}}" alt="">
     
             {% endfor %}
@@ -66,8 +68,8 @@
     <br><br>
     <form method="Post">
         {{ form.hidden_tag() }}
-        {{ form.name.label(class=" mx-1 grt position-absolute top-50 start-50 translate-middle") }} 
-        {{form.name(class="mx-3 px-5  position-absolute top-50 start-50 translate-middle" ) }}
+        {{ form.name.label(class=" fs-1 mx-1 grt position-absolute top-50 start-50 translate-middle") }} 
+        {{form.name(class="  mx-3 px-5  position-absolute top-50 start-50 translate-middle" ) }}
         <br><br>
         {{ form.submit(class="my-5 btn   btn-outline-light position-absolute top-50 start-50 translate-middle") }}
     </form>
